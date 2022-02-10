@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./dist/style.css" />
+</head>
+<body class="bg-gradient-to-br from-gray-700 via-gray-900 to-black">
+  <svg class="absolute t-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#000b29" fill-opacity="1" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,112C672,96,768,160,864,154.7C960,149,1056,75,1152,90.7C1248,107,1344,213,1392,266.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+    </path>
+  </svg>
+  <div class="flex h-screen">
+    <div class="flex flex-col m-auto w-80 h-5/6 rounded-2xl drop-shadow-2xl bg-gray-700">
+      <div class="flex flex-col justify-end h-1/3 rounded-2xl my-1 mx-1 shadow-2xl bg-gradient-to-br from-gray-500 via-gray-700 to-gray-900">
+        <div id="result-field" class="h-2/4  my-2 mx-2 rounded-2xl">
+        </div>
+        <hr class="h-1 border-gray-700 " />
+        <div id="expression-field" class="h-2/4  my-2 mx-2 rounded-2xl">
+        </div>
+      </div>
+      <div class="grid my-auto gap-3 grid-rows-6 grid-cols-4 justify-center justify-items-center content-center">
+        <button id="open-parenthesis" class="bg-amber-300 hover:bg-amber-400 hover:drop-shadow-2xl px-4 py-2 rounded-full">(</button>
+        <button id="close-parenthesis" class="bg-amber-300 hover:bg-amber-400 hover:drop-shadow-2xl px-4 py-2 rounded-full">)</button>
+        <button id="double-zero"
+        class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">00</button>
+        <button id="modulo"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">%</button>
+        <button id="backspace" class="bg-amber-300 hover:bg-amber-400 hover:drop-shadow-2xl px-4 py-2 rounded-full">←</button>
+        <button id="sine"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">sin</button>
+        <button id="cosine"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">cos</button>
+        <button id="tangent"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">tan</button>
+        <button id="clear" class="bg-amber-300 hover:bg-amber-400 hover:drop-shadow-2xl px-4 py-2 rounded-full">C</button>
+        <button id="point"
+          class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">.</button>
+        <button id="zero" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">0</button>
+        <button id="multiply"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">X</button>
+        <button id="seven"
+          class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">7</button>
+        <button id="eight"
+          class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">8</button>
+        <button id="nine" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">9</button>
+        <button id="subtract"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">-</button>
+        <button id="four" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">4</button>
+        <button id="five" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">5</button>
+        <button id="six" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">6</button>
+        <button id="addition"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">+</button>
+        <button id="one" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">1</button>
+        <button id="two" class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">2</button>
+        <button id="three"
+          class="text-white bg-gray-900 hover:bg-gray-800 hover:drop-shadow-2xl px-4 py-2 rounded-full">3</button>
+        <button id="division"
+          class="text-white bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-4 py-2 rounded-full">/</button>
+        <button id="equal"
+          class="text-white text-xl bg-purple-500 hover:bg-purple-700 hover:drop-shadow-2xl px-6 py-4 rounded-full col-span-4">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="./src/scripts/app.js"></script>
+</body>
+
+</html>

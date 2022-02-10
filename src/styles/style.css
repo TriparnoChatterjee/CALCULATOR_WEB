@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing:  border-box;
+}
+/* body::before{
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#2b05ff),
+		to(#fa0404)
+	);
+	background: linear-gradient(#2b05ff, #fa0404);
+	-webkit-clip-path: circle(30% at 10% 10%);
+	clip-path: circle(20% at 10% 10%); 
+}
+body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#3700fd),
+		to(#3f0)
+	);
+	background: linear-gradient(#3700fd, #3f0);
+	-webkit-clip-path: circle(30% at 90% 90%);
+	clip-path: circle(30% at 90% 90%);
+} */
