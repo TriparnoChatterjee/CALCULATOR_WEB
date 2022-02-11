@@ -1,5 +1,5 @@
 
-# TODO WEBSITE
+# CALCULATOR APPLICATION
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/32fb0572-6b70-40ac-a84d-c389251ef8da/deploy-status)](https://triparnochatterjeetodoapplication.netlify.app/)
 
